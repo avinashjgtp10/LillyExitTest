@@ -62,7 +62,7 @@
 
 								<div class="form-group"
 									ng-class="{ 'has-error' : registerForm.Rname.$invalid && !registerForm.Rname.$pristine }">
-									<label>System Id</label> <input type="text" name="Rname"
+									<label>User Name</label> <input type="text" name="Rname"
 										ng-model="user.Rname" placeholder="User name"
 										required="required" class="form-control">
 									<p

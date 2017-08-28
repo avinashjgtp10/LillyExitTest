@@ -20,3 +20,15 @@ app.factory("LangFactory",function($http){
 		return response;
 	});
 });
+
+app.service("LillyQuestion", function($http) {
+
+	return $http({
+		method : 'GET',
+		url : 'Asset/Lang/Question.json'
+	}).then(function successCallback(response) {
+		return response.data;
+	}, function errorCallback(response) {
+		return response;
+	});
+});
